@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-// import BottomBar from '@com/BottomBar';
+import BottomBar from '../../components/BottomBar'
 
 
 class Project extends Component{
@@ -9,9 +9,9 @@ class Project extends Component{
                 <div className="main">
                     <h1>项目</h1>
                 </div>
-                {/* <footer>
+                <footer>
                     <BottomBar/>
-                </footer> */}
+                </footer>
             </div>
             
         )

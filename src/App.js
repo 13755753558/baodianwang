@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Route,Switch,Redirect} from 'react-router-dom';
+import 'antd-mobile/dist/antd-mobile.css';
 import './App.scss';
 
 //引入主要路由页面

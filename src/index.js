@@ -7,7 +7,7 @@ import './sass/base.css';
 
 ReactDOM.render(
 	<HashRouter>
-	<App />
+		<App />
 	</HashRouter>,
     document.getElementById('root')
 );

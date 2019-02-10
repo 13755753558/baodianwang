@@ -1,0 +1,77 @@
+@function t($px){   //$px为需要转换的字号
+    @return $px / 50px * 1rem;   //50px为根字体大小
+}
+
+.main{
+    background-color: #f0eff5;
+    .homeone{
+        display:block;
+        background-color: #282828;
+        padding: t(8px) t(15px);
+        span{
+            vertical-align: middle;
+            color: #fff;
+        }
+        .homeoneA{
+            display: inline-block;
+            width: t(26px);
+            height: t(26px);
+            background: url(https://mobile.bao.cn/static/media/tb.883ffb9a.jpg) no-repeat 50%;
+            margin-left: t(8px);
+            background-size: 100% 100%;
+            border-radius: 50%;
+        }
+        .homeoneB{
+            margin-left: t(5px);
+            font-size: t(14px);
+        }
+        .homeoneC{
+            display:inline-block;
+            padding: t(5px) t(10px);
+            background-color: #00a6e2;
+            color: #fff;
+            border-radius: t(4px);
+            margin-left:t(70px);
+        }
+    }
+    .homethr{
+        margin-bottom:t(15px);
+        .homethrA{
+            display:block;
+            background-color:#fff;
+            .thrli{
+                display: inline-block;
+                width: 33.3%;
+                padding: t(9px) 0;
+                color: #000;
+                text-align: center;
+                font-size: t(14px);
+                position: relative;
+                .thrimg{
+                    width:t(14px);
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-top: t(-4px);
+                    margin-right: t(3px);
+                }
+                .thrimgl{
+                    position: absolute;
+                    height: 100%;
+                    top: 0;
+                    left: 0; 
+                }
+                .thrimgr{
+                    position: absolute;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                }
+            }
+        }
+    }
+    .homefor{
+        .homeforimg{
+            width:100%;
+        }
+    }
+}
