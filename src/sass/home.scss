@@ -70,8 +70,152 @@
         }
     }
     .homefor{
+        margin-bottom:t(15px);
+        display: block;
         .homeforimg{
             width:100%;
+        }
+    }
+    .homefiv{
+        padding-left: t(15px);
+        background-color: #fff;
+        margin-bottom: t(20px);
+        .homefivA{
+            font-size: t(16px);
+            color: #000;
+            border-bottom: t(1px) solid #e5e5e5;
+            padding-top: t(14px);
+            padding-bottom: t(14px);
+            .homefivAa{
+                font-size: t(12px);
+                color: #888;
+                float: right;
+                margin-right: t(15px);
+                margin-top: t(3px);
+            }
+        }
+        .homefivB{
+            position: relative;
+            .homefivBa{
+                background-color: #75a6ed;
+                position: absolute;
+                font-size: t(10px);
+                padding: t(5px) t(10px);
+                top: 0;
+                right: t(15px);
+                color: #fff;
+                border-bottom-left-radius: t(10px);
+                border-bottom-right-radius: t(10px);
+            }
+            .homefivBb{
+                padding-top: t(37px);
+                padding-bottom: t(37px);
+                color: #f70;
+                font-size: t(52px);
+                margin-left: t(-15px);
+                text-align: center;
+                .homefivBc{
+                    display: inline-block;
+                    font-size: t(20px);
+                    vertical-align: bottom;
+                    padding-bottom: t(10px);
+                    margin-left: t(3px);
+                }
+            }
+            .homefivBd{
+                padding-bottom: t(15px);
+                font-size: t(14px);
+                color: #666;
+                margin-left: t(-15px);
+                text-align: center;
+                .homefivBe{
+                    padding-right: t(13px);
+                    border-right: t(1px) solid #ddd;
+                    .homefivBf{
+                        color: #f70;
+                    }
+                }
+                .homefivBg{
+                    margin-left: t(13px);
+                }
+            }
+            .homefivBh{
+                margin-left: t(-15px);
+                text-align: center;
+                .homefivBi{
+                    width: t(240px);
+                    height: t(45px);
+                    border-radius: t(45px);
+                    font-size: t(22px);
+                    color: #fff;
+                    background: #f70;
+                    line-height: t(45px);
+                    display: inline-block;
+                    margin-bottom: t(27px);
+                }
+            }
+            
+        }
+    }
+    .homesix{
+        margin-bottom: t(50px);
+        padding: 0 0 t(15px) t(15px);
+        background-color: #fff;
+        .homesixA{
+            padding: t(10px) 0;
+            border-bottom: t(1px) solid #e5e5e5;
+            font-size: t(16px);
+            color: #030303;
+        }
+        .homesixB{
+            .homesixBa{
+                padding: t(15px) 0;
+                display: inline-block;
+                width: 50%;
+                vertical-align: middle;
+                .homesixBaa{
+                    border-right: t(1px) solid #e5e5e5;
+                    .homesixBaaa{
+                        font-size: t(30px);
+                        color: #f70;
+                        .homesixBaaaa{
+                            font-size: t(14px);
+                            color: #f70;
+                        }
+                    }
+                    .homesixBaab{
+                        font-size: t(12px);
+                        color: #aaa;
+                        padding: t(5px) 0;
+                    }
+                }
+            }
+            .homesixBb{
+                display: inline-block;
+                width: 50%;
+                vertical-align: middle;
+                padding: t(15px) 0;
+                p{
+                    padding-left:t(15px);
+                }
+                .homesixBba{
+                    font-size: t(14px);
+                    color: #666;
+                    margin-bottom: t(8px);
+                    .homesixBbaa{
+                        font-size: t(14px);
+                        color: #f70;
+                    }
+                }
+                .homesixBbb{
+                    font-size: t(14px);
+                    color: #666;
+                    vertical-align: bottom;
+                    margin-top: t(15px);
+                    word-break: break-all;
+                    word-wrap: break-word;
+                }
+            }
         }
     }
 }

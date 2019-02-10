@@ -38,6 +38,49 @@ class Home extends Component{
                     <a href="javascript" className="homefor">
                         <img className="homeforimg" src="https://mobile.bao.cn/static/media/newHand.6ee7a956.png" alt=""/>
                     </a>
+                    <div className="homefiv">
+                        <div className="homefivA">
+                            <span>新手标</span>
+                            <span className="homefivAa">每人限3次加入，累计限额1万</span>
+                        </div>
+                        <div className="homefivB">
+                            <div className="homefivBa">新手专享</div>
+                            <p className="homefivBb">
+                                12.10
+                                <span className="homefivBc">%</span>
+                            </p>
+                            <p className="homefivBd">
+                                <span className="homefivBe">
+                                    <span className="homefivBf">50</span>
+                                    元起投
+                                </span>
+                                <span className="homefivBg">出借期限1个月</span>
+                            </p>
+                            <p className="homefivBh">
+                                <a className="homefivBi" href="javascript:;">立即出借</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div className="homesix">
+                        <p className="homesixA">3月期聚点+3个月</p>
+                        <div className="homesixB">
+                            <div className="homesixBa">
+                                <div className="homesixBaa">
+                                    <p className="homesixBaaa">11.00
+                                        <span className="homesixBaaaa">%</span>
+                                    </p>
+                                    <p className="homesixBaab">参考年回报率</p>
+                                </div>
+                            </div>
+                            <div className="homesixBb">
+                                <p className="homesixBba">起投
+                                    <span className="homesixBbaa">1000</span>
+                                    元
+                                </p>
+                                <p className="homesixBbb">到期还本付息</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <footer>
                     <BottomBar/>
