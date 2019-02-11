@@ -3,7 +3,7 @@ import { Carousel} from 'antd-mobile';
 
 
 //使用axios请求数据
-// import axios from 'axios';
+import axios from 'axios';
 
 class HomeBanner extends Component {
     constructor(){
@@ -11,48 +11,57 @@ class HomeBanner extends Component {
         this.state = {
             error: null,
             isLoaded: false,
-            bannerlist:[
-                "https://bao-image.oss-cn-hangzhou.aliyuncs.com/uploadfile/img/month_181107/201811070943339863.png",
-                "https://bao-image.oss-cn-hangzhou.aliyuncs.com/uploadfile/img/month_180508/201805080846168589.jpg",
-                "https://bao-image.oss-cn-hangzhou.aliyuncs.com/uploadfile/img/month_171024/201710240111172374.png"
-            ],
-            imgHeight:200
+            bannerlist:[],
+            imgHeight:"4rem"
         }
     }
-//   componentDidMount() {
-//     let bannerurl = 'mobile_api/common/banner?cateId=1';
-//     axios.get(bannerurl) 
-//         .then(function (response) {
-//             console.log(response.data);
-//         }) .catch(function (error) { 
-//             console.log(error); 
-//         })
+  componentDidMount() {
+    let bannerurl = 'mobile_api/common/banner?cateId=1';
+    axios.get(bannerurl) 
+        .then(response => {
+            //console.log(response);
+            let bannerlist = response.data.data;
+            console.log(bannerlist);
+            // setTimeout(() => {
+            //     this.setState({
+            //      bannerlist,
+            //     });
+            //   }, 100);
+            this.setState({
+                bannerlist
+            })
+        }) .catch(error=> { 
+            console.log(error); 
+        })
 
-//   }
+  }
   render() {
     return (
         <div className="homebanner">
-            <Carousel
-            autoplay={true}
-            infinite
-            >
-            {this.state.bannerlist.map((item,idx) => (
-                <div
-                key={item}
-                style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
+           <Carousel
+                autoplay={true}
+                infinite
+                beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
+                afterChange={index => console.log('slide to', index)}
                 >
-                <img
-                    src={this.state.bannerlist[idx]}
-                    alt=""
-                    style={{ width: '100%', verticalAlign: 'top' }}
-                    onLoad={() => {
-                    // fire window resize event to change height
-                    window.dispatchEvent(new Event('resize'));
-                    this.setState({ imgHeight: 'auto' });
-                    }}
-                />
-                </div>
-            ))}
+                {this.state.bannerlist.map(val => (
+                    <a
+                    key={val}
+                    href={val.url}
+                    style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
+                    >
+                    <img
+                        src={val.img}
+                        alt=""
+                        style={{ width: '100%', verticalAlign: 'top' }}
+                        onLoad={() => {
+                        // fire window resize event to change height
+                        window.dispatchEvent(new Event('resize'));
+                        this.setState({ imgHeight: 'auto' });
+                        }}
+                    />
+                    </a>
+                ))}
             </Carousel>
         </div>
     );
