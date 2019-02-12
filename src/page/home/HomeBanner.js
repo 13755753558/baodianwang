@@ -15,14 +15,13 @@ class HomeBanner extends Component {
     }
     componentDidMount() {
         let bannerurl = 'mobile_api/common/banner?cateId=1';
-        axios.get(bannerurl) 
-        .then(response => {
+        axios.get(bannerurl).then(response => {
             //console.log(response);
             let bannerlist = response.data.data;
             this.setState({
                 bannerlist
             })
-        }) .catch(error=> { 
+        }).catch(error => { 
             console.log(error); 
         })
     }

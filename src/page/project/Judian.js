@@ -12,15 +12,14 @@ class Judian extends Component {
     }
     componentDidMount() {
         let judianurl = 'mobile_api/api/depositSupervise/projectLists?page=1&pageSize=100000000';
-        axios.get(judianurl) 
-        .then(response => {
+        axios.get(judianurl).then(response => {
             // console.log(response);
             let judianlist = response.data.data;
             // console.log(judianlist)
             this.setState({
                 judianlist
             })
-        }) .catch(error=> { 
+        }).catch(error => { 
             console.log(error); 
         })
     }

@@ -20,7 +20,7 @@ class Findtwo extends Component{
                     return (
                         <li key={item.title}>
                             <span>
-                                <img src={item.imgurl} />
+                                <img src={item.imgurl} alt="" />
                                 <p>{item.title}</p>
                             </span>
                         </li>

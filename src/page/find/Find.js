@@ -6,6 +6,8 @@ import FindBanner from './FindBanner';
 import Findtwo from './Findtwo';
 import Findthr from './Findthr';
 import Findfor from './Findfor';
+import Findfiv from './Findfiv';
+import Findsix from './Findsix';
 
 
 class Find extends Component{
@@ -17,6 +19,8 @@ class Find extends Component{
                     <Findtwo />
                     <Findthr />
                     <Findfor />
+                    <Findfiv />
+                    <Findsix />
                 </div>
                 <footer>
                     <BottomBar/>

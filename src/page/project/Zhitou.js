@@ -12,15 +12,14 @@ class Zhitou extends Component {
     }
     componentDidMount() {
         let zhitouurl = 'mobile_api/directInvest/projects?page=1';
-        axios.get(zhitouurl) 
-        .then(response => {
+        axios.get(zhitouurl).then(response => {
             // console.log(response);
             let zhitoulist = response.data.data;
             // console.log(zhitoulist)
             this.setState({
                 zhitoulist
             })
-        }) .catch(error=> { 
+        }).catch(error => { 
             console.log(error); 
         })
     }

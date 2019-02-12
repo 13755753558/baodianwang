@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { Carousel, WingBlank } from 'antd-mobile';
+import { Carousel} from 'antd-mobile';
 
 //使用axios请求数据
 import axios from 'axios';
@@ -14,14 +14,13 @@ class FindBanner extends Component{
     }
     componentDidMount() {
         let bannerurl = 'mobile_api/api/userVip/userIndexBanner';
-        axios.get(bannerurl) 
-        .then(response => {
+        axios.get(bannerurl).then(response => {
             // console.log(response);
             let bannerdata = response.data.data;
             this.setState({
                 bannerdata
             })
-        }) .catch(error=> { 
+        }).catch(error => { 
             console.log(error); 
         })
     }

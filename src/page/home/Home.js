@@ -35,9 +35,9 @@ class Home extends Component{
                             </li>
                         </ul>
                     </div>
-                    <a href="javascript" className="homefor">
+                    <div className="homefor">
                         <img className="homeforimg" src="https://mobile.bao.cn/static/media/newHand.6ee7a956.png" alt=""/>
-                    </a>
+                    </div>
                     <div className="homefiv">
                         <div className="homefivA">
                             <span>新手标</span>
@@ -57,7 +57,7 @@ class Home extends Component{
                                 <span className="homefivBg">出借期限1个月</span>
                             </p>
                             <p className="homefivBh">
-                                <a className="homefivBi" href="javascript:;">立即出借</a>
+                                <span className="homefivBi">立即出借</span>
                             </p>
                         </div>
                     </div>
