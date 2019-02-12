@@ -22,6 +22,15 @@ const tabs = [
 ];
 
 class Project extends Component{
+    constructor (props) {
+        super(props)
+        this.state = {}
+        this.goJudetail = this.goJudetail.bind(this)
+    }
+    goJudetail(id){
+        // this.props.history.push({path:`/judetail/${this.state.judianlist[idx].id}` });
+        this.props.history.push({pathname: '/judetail/'+ id})
+    }
     render(){
         return (
             <div className="page project">
@@ -34,7 +43,7 @@ class Project extends Component{
                             >
                                 <div className="projectone">
                                     <Judiantop />
-                                    <Judian />
+                                    <Judian func={this.goJudetail}/>
                                 </div>
                                 <div className="projecttwo">
                                     <Judiantop />

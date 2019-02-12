@@ -4,8 +4,8 @@ import React,{Component} from 'react';
 import axios from 'axios';
 
 class Judian extends Component {
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             judianlist:[]
         }
@@ -24,12 +24,15 @@ class Judian extends Component {
         })
     }
     render() {
+        let {func} = this.props
         return (
             <div className="judian">
-                {this.state.judianlist.map(item=>{
+                {this.state.judianlist.map((item,idx)=>{
                 let percent = parseInt(item.has_money*100/item.money)
                 return (
-                    <div className="programone" key={item.id}>
+                    <div className="programone" key={idx} onClick={() => {
+                        func(this.state.judianlist[idx].id)
+                    }}>
                     <div className="cellHead">
                         <div>
                             <p>{item.title}</p>

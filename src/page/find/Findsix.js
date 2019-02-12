@@ -14,7 +14,7 @@ class Findsix extends Component{
         let imgurl = 'mobile_api/api/userVip/activityList';
         axios.get(imgurl).then(response => {
             //console.log(response);
-            //获取前面4个数据
+            //获取前面3个数据
             let findsixdata = response.data.data.slice(0,3);
             this.setState({
                 findsixdata

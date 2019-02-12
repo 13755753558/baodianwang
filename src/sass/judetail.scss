@@ -1,0 +1,147 @@
+@function t($px){   //$px为需要转换的字号
+    @return $px / 50px * 1rem;   //50px为根字体大小
+}
+
+.judetail{
+    padding-top:t(45px);
+    margin-bottom:t(50px);
+    background:#f0eff5;
+    .jnarbar{
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+    }
+    .juheader{
+        display: flex;
+        -webkit-box-orient: vertical;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        background-color: #00a6e2;
+        color: #fff;
+        padding-top: t(36px);
+        margin-bottom:t(10px);
+        .juhuibao{
+            margin-bottom: t(20px);
+            color: #69d7ff;
+        }
+        .huibaollv{
+            font-size:t(69px);
+        }
+        .juhuibaox{
+            margin-bottom:t(30px);
+            span:first-child{padding-left:0;}
+            span:last-child{
+                border-right: 0;
+                padding-right: 0;
+            }
+            span{
+                display: inline-block;
+                font-size: t(12px);
+                padding: 0 t(40px);
+                border-right: t(1px) solid #44c2ef;
+                p{
+                    text-align: center;
+                    line-height: t(20px);
+                }
+                .juhuibaoxa{color: #69d7ff}
+            }
+        }
+    }
+    .depositBox___3W0pR{
+        background-color: #fff;
+        margin-bottom:t(10px);
+        .profit___27atc{
+            padding: t(15px) 0;
+            border-bottom: t(1px) solid #e5e5e5;
+            p{
+                padding: 0 t(15px);
+                font-size: t(16px);
+            }
+        }
+        .profitContent____gsW2{
+            padding: t(15px) t(15px) t(23px);
+            .profitText___3Nr1w{
+                font-size: t(14px);
+                color: #666;
+                margin-bottom: t(6px);
+            }
+            .profitText1___YznYQ{
+                font-size: t(12px);
+                color: #d2d2d2;
+                margin-bottom: t(20px);
+            }
+            .profitNum___3u538{
+                font-size: t(22px);
+                color: #f70;
+                vertical-align: bottom;
+                span{
+                    display: inline-block;
+                    font-size: t(14px);
+                    padding-bottom: t(4px);
+                    vertical-align: bottom;
+                }
+            }
+        }
+        .iconUl___M6ohw{
+            display: block;
+            width: 100%;
+            li{
+                display: inline-block;
+                width: 25%;
+                span{
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                    font-size: t(12px);
+                    color: #666;
+                }
+                img{
+                    width: t(30px);
+                    margin-bottom: t(10px);
+                }
+            }
+        }
+    }
+    .pdAll___1ulsI{
+        padding: t(20px) t(17px);
+    }
+    .pdAll1___1FTYt{
+        padding: t(15px);
+        font-size:t(16px);
+    }
+    .jubottom{
+        display: flex;
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: t(50px);
+        .jucalculator{
+            width: 50px;
+            background-color: #59c5ec;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            display: flex;
+        }
+        .jucalculator:before {
+            height: 70%;
+            width: 50%;
+            content: '';
+            background: url(https://mobile.bao.cn/static/media/calculator.448bba73.png) 50% no-repeat;
+            background-size: contain;
+        }
+        button{
+            -webkit-box-flex: 1;
+            flex: 1;
+            font-size: t(18px);
+            color: #fff;
+            background-color: #00a6e2;
+            border: 0;
+        }
+    }
+    
+}
