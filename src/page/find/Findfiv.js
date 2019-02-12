@@ -4,8 +4,8 @@ import React,{Component} from 'react';
 import axios from 'axios';
 
 class Findfiv extends Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {
             findfivgood:[]
         }
@@ -14,8 +14,9 @@ class Findfiv extends Component{
         let goodurl = 'mobile_api/api/userVip/goodsList?page=1';
         axios.get(goodurl).then(response => {
             //console.log(response);
-            //获取前面4个数据
-            let findfivgood = response.data.data.slice(0,4);
+            // let findfivgood = response.data.data;
+            //获取前面12个数据
+            let findfivgood = response.data.data.slice(0,12);
             this.setState({
                 findfivgood
             })
@@ -24,6 +25,7 @@ class Findfiv extends Component{
         })
     }
     render(){
+        let {Gooddetail} = this.props
         return(
             <div className="findcon findfiv">
                 <div className="itemTitle___1AOe9">
@@ -33,9 +35,12 @@ class Findfiv extends Component{
                     </a>
                 </div>
                 <ul className="findfivgood">
-                    {this.state.findfivgood.map(item=>{
+                    {this.state.findfivgood.map((item,idx)=>{
                         return (
-                            <li key={item.product_id}>
+                            <li key={idx} onClick={()=>{
+                                //console.log(this.state.findfivgood[idx].product_id)
+                                Gooddetail(this.state.findfivgood[idx].product_id)
+                            }}>
                                 <span className="label___2qVEr">{item.label_name}</span>
                                 <p className="shopTitle1___1FIsP">{item.product_name}</p>
                                 <p className="shopTitle2___3URsP">

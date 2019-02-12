@@ -1,0 +1,150 @@
+@function t($px) {
+    //$px为需要转换的字号
+    @return $px / 50px * 1rem; //50px为根字体大小
+}
+
+.gooddetail {
+    padding-top: t(45px);
+    margin-bottom: t(50px);
+    background: #f0eff5;
+
+    .am-navbar.am-navbar-light {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .goodsTop {
+        width: 100%;
+        background-color: #fff;
+
+        .goodsImg {
+            width: 96%;
+            margin: 0 auto;
+            height: t(240px);
+            border-bottom: t(1px) solid #dedede;
+            text-align: center;
+            position: relative;
+
+            .productImg {
+                width: 45%;
+                margin: 0 auto;
+            }
+        }
+
+        .proTitle {
+            width: 100%;
+            padding: t(15px) t(17px);
+            margin-bottom: t(10px);
+
+            .titleTop {
+                height: t(15px);
+                line-height: t(15px);
+                font-size: t(12px);
+                color: #333;
+
+                .titieTxt {
+                    float: left;
+                }
+            }
+
+            .titleBottom {
+                height: t(40px);
+                line-height: t(40px);
+
+                .priceTxt {
+                    font-size: t(18px);
+                    color: #333;
+                    margin-right: t(5px);
+                }
+            }
+        }
+    }
+
+    .propertyDiv {
+        width: 100%;
+        background-color: #fff;
+        padding: t(15px) t(17px);
+        font-size: t(14px);
+        margin-top: t(10px);
+
+        .propertyItem {
+            .numf {
+                font-size: t(14px);
+                margin-top: t(20px);
+
+                .nums {
+                    color: #666;
+                }
+            }
+
+            .propertyValue {
+                height: t(40px);
+                padding: t(5px) 0;
+
+                span {
+                    float: left;
+                    padding: 0 t(10px);
+                    border: t(1px) solid #999;
+                    border-radius: t(3px);
+                    margin: 0 t(3px);
+                    margin-top: t(5px);
+                    text-align: center;
+                    line-height: t(30px);
+                }
+            }
+
+        }
+
+        .num1 {
+            font-size: t(14px);
+            margin-top: t(20px);
+
+            .num2 {
+                color: #666;
+            }
+        }
+
+        .numSelect {
+            height: t(40px);
+            padding: t(5px) 0;
+
+            .numBorder {
+                float: left;
+                width: t(30px);
+                height: t(30px);
+                border: t(1px) solid #999;
+                border-radius: t(3px);
+                margin: 0 t(3px);
+                margin-top: t(5px);
+                text-align: center;
+                line-height: t(30px);
+            }
+
+            .productNum {
+                outline: none;
+                float: left;
+                width: t(40px);
+                height: t(30px);
+                border: t(1px) solid #999;
+                border-radius: t(3px);
+                margin: 0 t(3px);
+                margin-top: t(5px);
+                text-align: center;
+                line-height: t(30px);
+            }
+
+            .limitTxt {
+                float: right;
+                font-size: t(12px);
+                color: #333;
+                margin-top: t(15px);
+                margin-right: t(30px);
+            }
+        }
+
+    }
+
+    
+}
