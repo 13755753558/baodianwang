@@ -1,24 +1,24 @@
-import React,{Component} from 'react';
+import React, { Component } from 'react';
 
 //使用axios请求数据
-import axios from 'axios';
+import axios from 'axios'
 
-class Judian extends Component {
-    constructor(){
+class Zhitou extends Component {
+    constructor() {
         super();
         this.state = {
-            judianlist:[]
+            zhitoulist:[]
         }
     }
     componentDidMount() {
-        let judianurl = 'mobile_api/api/depositSupervise/projectLists?page=1&pageSize=100000000';
-        axios.get(judianurl) 
+        let zhitouurl = 'mobile_api/directInvest/projects?page=1';
+        axios.get(zhitouurl) 
         .then(response => {
             // console.log(response);
-            let judianlist = response.data.data;
-            // console.log(judianlist)
+            let zhitoulist = response.data.data;
+            // console.log(zhitoulist)
             this.setState({
-                judianlist
+                zhitoulist
             })
         }) .catch(error=> { 
             console.log(error); 
@@ -27,13 +27,13 @@ class Judian extends Component {
     render() {
         return (
             <div className="judian">
-                {this.state.judianlist.map(item=>{
-                let percent = parseInt(item.has_money*100/item.money)
+                {this.state.zhitoulist.map(item=>{
+                // let percent = parseInt(item.has_money*100/item.money)
                 return (
                     <div className="programone" key={item.id}>
                     <div className="cellHead">
                         <div>
-                            <p>{item.title}</p>
+                            <p>{item.name}</p>
                         </div>
                     </div>
                     <div className="cellBody">
@@ -48,21 +48,21 @@ class Judian extends Component {
                         </div>
                         <div className="cellBodyr">
                             <div className="canbuy">
-                                <p>出借</p>
+                                <p>还款中</p>
                             </div>
                         </div>
                     </div>
                     <div className="cellFoot">
                         <div className="cellFootl">
                             <p className="cellFootla">参考年回报率</p>
-                            <p className="cellFootlb">期限{item.month}个月</p>
+                            <p className="cellFootlb">期限{item.term}个月</p>
                         </div>
-                        <div className="cellFootr">
+                        {/* <div className="cellFootr">
                             <p>{percent}%</p>
                             <div>
                                 <div style={{width:`${percent}%`}}></div>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 )})}
@@ -70,6 +70,5 @@ class Judian extends Component {
             </div>
         );
     }
-}
-
-export default Judian;
+}        
+export default Zhitou;

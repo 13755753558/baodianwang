@@ -7,6 +7,8 @@ import '../../sass/project.scss';
 //引入组件
 import Judiantop from './Judiantop';
 import Judian from './Judian';
+import Zhitou from './Zhitou';
+import Zhaiquan from './Zhaiquan';
 
 function renderTabBar(props) {
     return (<Sticky>
@@ -34,11 +36,12 @@ class Project extends Component{
                                     <Judiantop />
                                     <Judian />
                                 </div>
-                                <div>
-                                    Content of second tab
+                                <div className="projecttwo">
+                                    <Judiantop />
+                                    <Zhitou />
                                 </div>
-                                <div>
-                                    Content of third tab
+                                <div className="projectthr">
+                                    <Zhaiquan />
                                 </div>
                             </Tabs>
                         </StickyContainer>

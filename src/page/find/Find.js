@@ -1,6 +1,11 @@
 import React,{Component} from 'react';
+import '../../sass/find.scss'
 
 import BottomBar from '../../components/BottomBar'
+import FindBanner from './FindBanner';
+import Findtwo from './Findtwo';
+import Findthr from './Findthr';
+import Findfor from './Findfor';
 
 
 class Find extends Component{
@@ -8,7 +13,10 @@ class Find extends Component{
         return (
             <div className="page finder">
                 <div className="main">
-                    <h1>发现页面</h1>
+                    <FindBanner />
+                    <Findtwo />
+                    <Findthr />
+                    <Findfor />
                 </div>
                 <footer>
                     <BottomBar/>

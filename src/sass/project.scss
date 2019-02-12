@@ -6,8 +6,8 @@
     .am-whitespace.am-whitespace-md{
         height:0
     }
-//聚点+样式
-    .projectone{
+//聚点+直投样式
+    .projectone,.projecttwo{
         .judiantop{
             margin: t(8px) t(15px) t(8px);
             -webkit-box-flex: 1;
@@ -55,6 +55,138 @@
                         float: right;
                         font-size: t(14px);
                         color: #fb8d8a;
+                    }
+                }
+            }
+        }  
+    }
+    .projectone,.projecttwo{
+        .judian{
+            margin-bottom:t(50px);
+            .programone{
+                margin-bottom: t(8px);
+                background: #fff;
+                .cellHead{
+                    display: flex;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    -ms-flex-direction: row;
+                    flex-direction: row;
+                    padding: t(10px) t(15px);
+                    div{
+                        p{
+                            font-size: t(14px);
+                        }
+                    }
+                }
+                .cellBody{
+                    padding: t(5px) t(15px) t(10px);
+                    -webkit-box-align: end;
+                    -ms-flex-align: end;
+                    align-items: flex-end;
+                    display: flex;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    flex-direction: row;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                    .cellBodyl{
+                        width: 82%;
+                        display: flex;
+                        -webkit-box-align: end;
+                        align-items: flex-end;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        flex-direction: row;
+                        .cellBodyla{
+                            width: 49%;
+                            font-size: t(24px);
+                            color: rgb(255, 119, 0); 
+                            span{
+                                font-size: t(14px);
+                            }
+                        }
+                        .cellBodylb{
+                            color: #333;
+                            font-size:t(12px);
+                        }
+                    }
+                    .cellBodyr{
+                        .canbuy{
+                            height: t(26px);
+                            width: t(55px);
+                            background: #f70;
+                            display: flex;
+                            -webkit-box-pack: center;
+                            justify-content: center;
+                            -webkit-box-align: center;
+                            align-items: center;
+                            border-radius: t(3px);
+                            p{
+                                color: #fff;
+                                font-size: t(14px);
+                            }
+                        }
+                    }
+                }
+                .cellFoot{
+                    display: flex;
+                    -webkit-box-pack: justify;
+                    justify-content: space-between;
+                    -webkit-box-orient: horizontal;
+                    -webkit-box-direction: normal;
+                    flex-direction: row;
+                    padding: t(5px) t(15px) t(10px);
+                    -webkit-box-align: end;
+                    -ms-flex-align: end;
+                    align-items: flex-end;
+                    .cellFootl{
+                        width: 60%;
+                        display: flex;
+                        -webkit-box-align: end;
+                        align-items: flex-end;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        flex-direction: row;
+                        p{
+                            font-size: t(12px);
+                            color: #aaa;
+                        }
+                        .cellFootla{
+                            width: 65%;
+                        }
+                    }
+                    .cellFootr{
+                        -webkit-box-flex: 1;
+                        flex: 1;
+                        height: t(12px);
+                        display: flex;
+                        -webkit-box-orient: horizontal;
+                        -webkit-box-direction: normal;
+                        flex-direction: row;
+                        overflow: hidden;
+                        font-size: t(16px);
+                        color: #5ec5ea;
+                        margin-left: t(4px);
+                        p{
+                            font-size: t(12px);
+                            color: #aaa;
+                            margin-right: t(5px);
+                        }
+                        >div{
+                            -webkit-box-flex: 1;
+                            -ms-flex: 1;
+                            flex: 1;
+                            background: #aaa;
+                            height: t(3px);
+                            margin-top: t(4px);
+                            >div{
+                                background: #f70;
+                                height: 100%;
+                            }
+                        }
                     }
                 }
             }
