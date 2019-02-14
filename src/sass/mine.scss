@@ -1,0 +1,87 @@
+@function t($px){   //$px为需要转换的字号
+    @return $px / 50px * 1rem;   //50px为根字体大小
+}
+
+.minemain{
+    padding-bottom:t(50px);
+    .miheader{
+        background-image: url(https://mobile.bao.cn/static/media/banner.fb3df967.png);
+        background-size: 100% 100%;
+        padding-bottom: t(20px);
+        .headerline{
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            padding: t(6px) t(15px) 0;
+            .headerleft{
+                height: t(44px);
+                flex:3;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                .avatarImg{
+                    width: t(36px);
+                    display: inline-block;
+                    height: t(36px);
+                    margin: t(2px) 0;
+                }
+                .miuserName{
+                    color: #fff;
+                    margin: 0 t(6px);
+                }
+                .vipImg{
+                    width: t(36px);
+                }
+            }
+            .headerright{
+                -webkit-box-flex: 1;
+                -ms-flex: 1;
+                flex: 1;
+                text-align: right;
+                .serviceImg{
+                    width: t(32px);
+                    height: t(28px);
+                    margin-top: t(6px);
+                    margin-right: t(7px);
+                }
+                .settingImg {
+                    width: t(32px);
+                    height: t(32px);
+                    margin-top: t(6px);
+                }
+            }
+        }
+        .miamount{
+            text-align: center;
+            color: #fff;
+            font-weight: 400;
+            font-size: t(28px);
+            margin-top: t(30px);
+        }
+        .miamountText{
+            text-align: center;
+            font-size: t(14px);
+            margin-top: t(6px);
+            color: #f6f6f6;
+        }
+        .mitextBox{
+            border: t(1px) solid #c6e9fd;
+            border-radius: t(4px);
+            display: block;
+            width: t(124px);
+            font-size: t(12px);
+            text-align: center;
+            line-height: t(24px);
+            color: #c6e9fd;
+            margin: t(15px) auto t(30px);
+            img{
+                display: inline-block;
+                width: t(18px);
+                position: relative;
+                top: 0;
+                margin-right: t(4px);
+                box-sizing: border-box;
+            }
+        }
+    }
+}

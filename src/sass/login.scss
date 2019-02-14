@@ -1,0 +1,115 @@
+@function t($px){   //$px为需要转换的字号
+    @return $px / 50px * 1rem;   //50px为根字体大小
+}
+
+.login{
+    .lotop{
+        display: flex;
+        padding-left: t(15px);
+        padding-right: t(15px);
+        margin-top: t(14px);
+        .locancel{
+            -webkit-box-flex: 1;
+            flex: 1;
+            font-size: t(16px);
+            text-align: left;
+            color: #00a6e2;
+        }
+    }
+    .lologo{
+        margin-top: t(40px);
+        margin-bottom: t(70px);
+        display: block;
+        text-align: center;
+        .logopic{
+            width: t(80px);
+            height: t(75px);
+            display: inline-block;
+        }
+    }
+    .loinput{
+        .container___3ltDs.four___34Vcy{
+            border-top-width: 0;
+            border-bottom-width: 0;
+            background-color: #fff;
+            border-color: #ddd;
+            border-width: t(1px) 0;
+            border-style: solid; 
+            .wrap___3Ky4t{
+                border-bottom: 1px solid #ddd;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                border-width: 0;
+                margin-left: t(15px);
+                .false{
+                    .leftText___1zK0-{
+                        color: #000;
+                        font-size: t(16px);
+                        width: t(75px);
+                        display: block;
+                    }
+                }
+                .center___2aNmI{
+                    flex: 1;
+                    height: t(44px);
+                    font-size: t(16px);
+                    .centerInput___1Whck {
+                        font-size: t(16px);
+                        padding: 0;
+                        border: 0;
+                        height:100%;
+                        width: 100%;
+                        overflow: visible;
+                    }
+                }
+            }   
+        }
+        .logbtn{
+            background-color: #45c4f0;
+            border-color: #09ace7;
+            margin: t(30px) t(15px) 0;
+            height: t(40px);
+            display: flex;
+            -webkit-box-align: center;
+            align-items: center;
+            border: t(1px) solid #008bbc;
+            border-radius: t(5px);
+            text-align: center;
+            .logtext{
+                // color: #87dfff;
+                color:white;
+                font-size: t(18px);
+                text-align: center;
+                flex: 1;
+                -webkit-box-flex: 1;
+            }
+        }
+        .forgetWrap___dIrJn{
+            margin-top: t(25px);
+            margin-left: t(15px);
+            margin-right: t(15px);
+            display: flex;
+            .forgetBox___3zbCR{
+                flex: 1;
+                .forget___3fPBO{
+                    text-align: left;
+                    color: #888;
+                    font-size: t(16px);
+                    display: block;
+                    flex: 1;
+                }
+            }
+            div{
+                .register___396Zi{
+                    text-align: right;
+                    font-size: t(16px);
+                    color: #ff7701;
+                    display: block;
+                    flex:1;
+                }    
+            }
+        }
+           
+    }
+}

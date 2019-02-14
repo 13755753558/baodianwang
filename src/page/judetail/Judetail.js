@@ -94,19 +94,8 @@ class Judetail extends Component{
                     累计加入{this.state.judata.buy_total}人
                 </div>
                 <div className="jubottom">
-                    <Jusuan />        
+                    <Jusuan rate={this.state.judata.rate}/>        
                     <button>马上出借</button>
-                    {/* <span className="jisuan">
-                        <div className="jimodel">
-                            <div className="jicon">
-                                <div className="jicancel">
-                                    <div className="crossLine___2R3cX"></div>
-                                    <div className="crossLine___2R3cX crosstwo"></div>
-                                </div>
-                                <p className="p1___3pa_N">参考回报</p>
-                            </div>       
-                        </div>
-                    </span> */}
                 </div>
             </div>
         )
