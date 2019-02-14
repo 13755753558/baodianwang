@@ -118,22 +118,16 @@
         right: 0;
         bottom: 0;
         height: t(50px);
-        .jucalculator{
-            width: 50px;
-            background-color: #59c5ec;
-            -webkit-box-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            align-items: center;
-            display: flex;
+        .haha{
+            background-color:#59c5ec;
+            .jucalculator{
+                height: 100%;
+                background: url(https://mobile.bao.cn/static/media/calculator.448bba73.png) no-repeat center center;
+                background-size: 50%;
+                width: t(50px);
+            }
         }
-        .jucalculator:before {
-            height: 70%;
-            width: 50%;
-            content: '';
-            background: url(https://mobile.bao.cn/static/media/calculator.448bba73.png) 50% no-repeat;
-            background-size: contain;
-        }
+        
         button{
             -webkit-box-flex: 1;
             flex: 1;
@@ -142,6 +136,80 @@
             background-color: #00a6e2;
             border: 0;
         }
+    }  
+}
+
+//弹出内容样式
+//弹出内容样式
+
+.am-modal-content {
+    background-color:#f0eff5;
+    #jisuan{
+        .jimodal{
+            width:100%;
+            // position: absolute;
+            bottom: 0;
+            padding-bottom: t(30px);
+            height: auto;
+            background-color: #f0eff5;
+            display: flex;
+            flex-direction: column;
+            -webkit-box-align: center;
+            align-items: center;
+            .p1___3pa_N{
+                font-size: t(15px);
+            }
+            .jiresult{
+                font-size: t(35px);
+                color: #ff7701;
+                margin-top: t(15px);
+            }
+            .form___EfhjB{
+                display: flex;
+                background-color: #fff;
+                margin-top: t(10px);
+                height: t(90px);
+                align-self: stretch;
+                padding: 0 t(15px);
+                -webkit-box-orient: vertical;
+                flex-direction: column;
+                border-top: t(1px) solid #ddd;
+                border-bottom: t(1px) solid #ddd;
+                .row___3o5-0{
+                    flex: 1;
+                    display: flex;
+                    span{
+                        display: flex;
+                        -webkit-box-align: center;
+                        align-items: center;    
+                    }
+                    span:nth-child(1){
+                        margin-right: t(15px);
+                    }
+                    input{
+                        box-sizing:border-box;
+                        font-size: t(14px);
+                        -webkit-box-flex: 1;
+                        flex: 1;
+                        color: #00a6e2;
+                        overflow: visible;
+                        line-height: 1.15;
+                        margin: 0;
+                        // border:t(1px) solid black;
+                    }
+                }
+                .border___3DYF6{
+                    height: t(1px);
+                    background-color: #ddd;
+                }
+            }
+            .p3___ZTdqK{
+                margin: t(15px);
+                font-size: t(14px);
+                color: #888;
+                text-align: left;
+                align-self: stretch;
+            }
+        }
     }
-    
 }

@@ -5,7 +5,7 @@
 
 .gooddetail {
     padding-top: t(45px);
-    margin-bottom: t(50px);
+    margin-bottom: t(80px);
     background: #f0eff5;
 
     .am-navbar.am-navbar-light {
@@ -13,20 +13,22 @@
         top: 0;
         left: 0;
         right: 0;
+        z-index:99999;
     }
 
     .goodsTop {
         width: 100%;
         background-color: #fff;
+        box-sizing: border-box;
 
         .goodsImg {
-            width: 96%;
+            width: 100%;
             margin: 0 auto;
             height: t(240px);
             border-bottom: t(1px) solid #dedede;
             text-align: center;
             position: relative;
-
+            box-sizing: border-box;
             .productImg {
                 width: 45%;
                 margin: 0 auto;
@@ -34,7 +36,7 @@
         }
 
         .proTitle {
-            width: 100%;
+            // width: 100%;
             padding: t(15px) t(17px);
             margin-bottom: t(10px);
 
@@ -63,7 +65,7 @@
     }
 
     .propertyDiv {
-        width: 100%;
+        // width: 50%;
         background-color: #fff;
         padding: t(15px) t(17px);
         font-size: t(14px);
@@ -136,14 +138,47 @@
             }
 
             .limitTxt {
-                float: right;
+                float: left;
                 font-size: t(12px);
                 color: #333;
                 margin-top: t(15px);
-                margin-right: t(30px);
+                margin-right: t(10px);
             }
         }
 
+    }
+
+    .detailImg{
+        background:#fff;
+        .infoTitle{
+            padding-left: t(20px);
+            margin-bottom: t(10px);
+            margin-top: t(10px);
+            padding-top: t(10px);
+        }
+        .infoContent{
+            img{width: 100%;}
+        }
+    }
+
+    .Bottonlast{
+        position: fixed;
+        width: 100%;
+        height: t(80px);
+        bottom: 0;
+        text-align: center;
+        background-color: #fff;
+        padding-top: t(15px);
+        p{
+            width: 80%;
+            margin: 0 auto;
+            height: t(46px);
+            line-height: t(46px);
+            background-color: #fe684b;
+            color: #fff;
+            border-radius: t(28px);
+            box-shadow: 0 t(5px) t(2px) #fea999;
+        }
     }
 
     
