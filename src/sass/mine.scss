@@ -83,5 +83,111 @@
                 box-sizing: border-box;
             }
         }
+        .tabs___38R4I{
+            display: flex;
+            height: t(18px);
+            .tab___8v7Fh{
+                -webkit-box-flex: 1;
+                flex: 1;
+                text-align: center;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                -webkit-box-pack: center;
+                justify-content: center;
+                img{
+                    width: t(26px);
+                    display: inline-block;
+                    margin-right: t(4px);
+                }
+                span{
+                    font-size: t(12px);
+                    color: #f6f6f6;
+                }
+            }
+            .center___2cxrf{
+                border-left: t(1px) solid #fff;
+                border-right: t(1px) solid #fff;
+            }
+        }
+    }
+    .myProduct___10rOO{
+        margin-bottom:t(10px);
+        width: 100%;
+        overflow: hidden;
+        background-color: #fff;
+        border-bottom: t(1px) solid #e4e4e4;
+        height:t(65px);
+        .mpLeft___1evjj{
+            width: 50%;
+            float: left;
+            padding-left: t(15px);
+            .one___12g3J{
+                height: auto;
+                line-height: 1;
+                font-size: t(12px);
+                color: #999;
+                margin: t(12px) 0 t(6px);
+            }
+            .two___2_eeu{
+                height: auto;
+                line-height: 1;
+                font-size: t(20px);
+                color: #000;
+            }
+        }
+        .mpright___1b30E{
+            // float: left;
+            // width: 50%;
+            padding: 0 t(15px);
+            position: relative;
+            .a___3lCoi{
+                display: block;
+                float: right;
+                margin-top: t(16px);
+                .rechange___2Lkzb{
+                    display: inline-block;
+                    padding: t(6px) t(12px);
+                    border-radius: t(2px);
+                    border: t(1px) solid #ff7701;
+                    background-color: #ff7701;
+                    color: #fff;
+                    margin-left: t(6px);
+                }
+                .withdrawals___3iVWp{
+                    display: inline-block;
+                    padding: t(6px) t(12px);
+                    border-radius: t(2px);
+                    border: t(1px) solid #ff7701;
+                    background-color: #fff;
+                    color: #ff7701;
+                }
+            }
+        }
+    }
+    .functionBox{
+        background-color: #fff;
+        padding-bottom: t(10px);
+        .boxtitle{
+            padding: t(10px) t(15px);
+        }
+        .box___OBBy{
+            display: flex;
+            .item___3rTRC{
+                text-align: center;
+                margin: t(10px) 0;
+                width: 25%;
+                float: left;
+                img{
+                    display: inline-block;
+                    width: t(38px);
+                }
+                p{
+                    font-size: t(12px);
+                    color: #666;
+                    margin-top: t(6px);
+                }
+            }
+        }
     }
 }
