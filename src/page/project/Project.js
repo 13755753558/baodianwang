@@ -8,7 +8,7 @@ import '../../sass/project.scss';
 import Judiantop from './Judiantop';
 import Judian from './Judian';
 import Zhitou from './Zhitou';
-import Zhaiquan from './Zhaiquan';
+import Zhaiquan from './Zhaiquan.jsx';
 
 function renderTabBar(props) {
     return (<Sticky>
